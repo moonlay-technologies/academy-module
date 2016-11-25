@@ -1,13 +1,13 @@
 'use strict'
 
 var ObjectId = require("mongodb").ObjectId;
+require("mongodb-toolkit");
+var BaseManager = require('module-toolkit').BaseManager;
+var ValidationError = require('module-toolkit').ValidationError;
 var Models = require('academy-models');
 var map = Models.map;
 var Role = Models.auth.Role;
-var BaseManager = require('module-toolkit').BaseManager;
-var ValidationError = require('module-toolkit').ValidationError;
 
-require("mongodb-toolkit");
 module.exports = class RoleManager extends BaseManager {
     constructor(db, user) {
         super(db, user);

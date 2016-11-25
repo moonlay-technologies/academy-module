@@ -1,14 +1,14 @@
 'use strict'
 
 var ObjectId = require("mongodb").ObjectId;
-var Models = require('academy-models');
-var map = Models.map;
-var Account = Models.auth.Account;
+require("mongodb-toolkit");
 var BaseManager = require('module-toolkit').BaseManager;
 var ValidationError = require('module-toolkit').ValidationError;
 var sha1 = require("sha1");
-
-require("mongodb-toolkit");
+var Models = require('academy-models');
+var map = Models.map;
+var Account = Models.auth.Account;
+ 
 module.exports = class AccountManager extends BaseManager {
     constructor(db, user) {
         super(db, user);
