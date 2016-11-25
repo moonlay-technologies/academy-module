@@ -1,0 +1,32 @@
+{
+  "name": "academy-module",
+  "version": "1.0.0",
+  "description": "academy module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonlay-technologies/academy-module.git"
+  },
+  "author": "Moonlay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moonlay-technologies/academy-module/issues"
+  },
+  "homepage": "https://github.com/moonlay-technologies/academy-module#readme",
+  "dependencies": {
+    "academy-models": "git+https://github.com/moonlay-technologies/academy-models.git",
+    "module-toolkit": "git+https://github.com/pinkgorilla/module-toolkit.git",
+    "moment": "^2.17.0",
+    "mongo-factory": "^1.0.0",
+    "mongodb": "^2.2.11",
+    "mongodb-toolkit": "git+https://github.com/pinkgorilla/mongodb-toolkit.git",
+    "sha1": "^1.1.1",
+    "should": "^11.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
